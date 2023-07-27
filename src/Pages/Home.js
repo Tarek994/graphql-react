@@ -7,6 +7,12 @@ function Home() {
         variables: {name: "Vancouver"}
     }) 
 
+  const [getWeather, { loading, error, data }] = useLazyQuery(
+    GET_WEATHER_QUERY,
+    {
+      variables: { name: citySearched },
+    }
+  );
 
 
     return (
