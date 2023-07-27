@@ -3,9 +3,7 @@ import { GET_WEATHER_QUERY } from "../graphql/Queries"
 
 
 function Home() {
-    const [ getWeather, {loading, error, data} ] = useLazyQuery(GET_WEATHER_QUERY, {
-        variables: {name: "Vancouver"}
-    }) 
+  const [citySearched, setCitySearched] = useState("");
 
   const [getWeather, { loading, error, data }] = useLazyQuery(
     GET_WEATHER_QUERY,
