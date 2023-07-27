@@ -12,6 +12,10 @@ function Home() {
     }
   );
 
+  if (error) return <h1>Error Found</h1>;
+  if (data) {
+    console.log("Data", data);
+  }
 
     return (
         <div className="home">
