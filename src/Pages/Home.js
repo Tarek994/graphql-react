@@ -20,9 +20,14 @@ function Home() {
     return (
         <div className="home">
             <h1> Search For Weather</h1>
-            <input type="text" placeholder="City name ..." />
-            <button onClick={() => getWeather()}>Search </button>
-        </div>
+      <input
+        type="text"
+        placeholder="City name ..."
+        onChange={(event) => {
+          setCitySearched(event.target.value);
+        }}
+      />
+      <button onClick={() => getWeather()}>Search </button>
     )
 }
 
