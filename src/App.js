@@ -4,7 +4,6 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  HttpLink,
 } from "@apollo/client";
 
 function App() {
