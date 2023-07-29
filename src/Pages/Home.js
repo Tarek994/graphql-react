@@ -18,7 +18,7 @@ function Home() {
   }
 
   return (
-    <div className="home">
+    <div className="home App">
       <h1> Search For Weather</h1>
       <input
         type="text"
